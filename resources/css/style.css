@@ -1,0 +1,143 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v29-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v29-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v29-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v29-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v29-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v29-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v29-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+:root{
+    --full: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto';
+    transition: all 0.3s ease-in-out;
+}
+
+.container
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--full);
+    height: 100vh;
+}
+
+form{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 450px;
+    width: var(--full);
+    background-color: rgb(36, 151, 218);
+    min-height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 0px #000;
+    padding: 20px;
+}
+
+form .form-item,
+form .wrapp
+{
+    width: var(--full);
+}
+
+form .wrapp
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+form .wrapp .form-item span
+{
+    display: flex;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form .wrapp .form-item select
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--full);
+    min-height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+form .form-item label
+{
+    cursor: pointer;
+    width: var(--full);
+    min-height: 50px;
+    background-color: #fff;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form .form-item input
+{
+    display: none;
+}
+
+form .btn-area{
+    width: var(--full);
+    margin-top: 50px;
+}
+
+form .btn-area button
+{
+    border-style: none;
+    width: var(--full);
+    border-radius: 10px;
+    min-height: 70px;
+    background-color: rgb(152, 215, 251);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.image-selected
+{
+    background-color: rgb(53, 189, 0) !important;
+    color: #fff;
+}
